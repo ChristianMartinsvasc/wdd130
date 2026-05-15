@@ -4,12 +4,11 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
     color: #222;
     background: #fff;
-    margin: 0;
 }
 
 nav {
@@ -21,13 +20,16 @@ nav a {
     color: white;
     display: block;
     padding: 10px;
+    text-decoration: none;
 }
+
 h1 {
     color: steelblue;
 }
 
-main { 
+main {
     max-width: 700px;
+    margin: 1rem;
 }
 
 main img {
@@ -37,21 +39,15 @@ main img {
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
-img {
-    width: 150px;
-    height: auto;
-    border: 1px solid steelblue;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-}
+
 p {
     padding: 0;
 }
 
 aside {
     width: 20rem;
-    margin: 1em;
-    border: 1px solid rgb(0 0 0 2);
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
     padding: 1rem;
     background-color: #eee;
     color: #333;
@@ -64,7 +60,8 @@ aside img {
 }
 
 footer {
-    margin-top: 1em;
+    margin-top: 1rem;
     border-top: 1px solid #000;
     text-align: center;
+    padding: 1rem;
 }
