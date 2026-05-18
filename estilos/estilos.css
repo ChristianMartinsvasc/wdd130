@@ -1,3 +1,7 @@
+:root {
+    --pandding: 10px;
+    --margin: 1rem;
+}
 * {
     margin: 0;
     padding: 0;
@@ -13,13 +17,13 @@ body {
 
 nav {
     background-color: steelblue;
-    padding: 10px;
+    padding: var(--pandding);
 }
 
 nav a {
     color: white;
     display: block;
-    padding: 10px;
+    padding: var(--pandding);
     text-decoration: none;
 }
 
@@ -29,7 +33,7 @@ h1 {
 
 main {
     max-width: 700px;
-    margin: 1rem;
+    margin: var(--margin);
 }
 
 main img {
@@ -46,7 +50,7 @@ p {
 
 aside {
     width: 20rem;
-    margin: 1rem;
+    margin: var(--margin);
     border: 1px solid rgb(0 0 0);
     padding: 1rem;
     background-color: #eee;
@@ -60,7 +64,7 @@ aside img {
 }
 
 footer {
-    margin-top: 1rem;
+    margin-top: var(--margin);
     border-top: 1px solid #000;
     text-align: center;
     padding: 1rem;
