@@ -28,6 +28,8 @@ h1 {
 }
 
 main img {
+    margin-right: 10px;
+    margin-bottom: 20px;
     width: 150px;
     height: auto;
     border: 1px solid steelblue;
