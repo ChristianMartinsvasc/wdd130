@@ -34,7 +34,7 @@ header{
     grid-template-columns: 200px 1fr;
     align-items: center;
     background-color: var(--cor-secundaria);
-    color: var(--cor-destaque2);
+    color: var();
 }
 header img{
     width: 180px;
@@ -63,7 +63,7 @@ nav a:hover{
 }
 .hero h1{
     position: absolute;
-    top: 20px;
+    top: 10px;
     width: 100%;
     padding: 16px;
     background-color: rgba(29, 53, 87, 0.8);
@@ -73,11 +73,11 @@ nav a:hover{
 }
 .hero article{
     position: absolute;
-    bottom: 30px;
+    bottom: 0;
     left: 30px;
     right: 30px;
     background-color: rgba(255,255,255,0.85);
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
 }
 .hero article img{
