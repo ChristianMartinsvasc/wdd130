@@ -107,7 +107,6 @@ footer{
 }
 .redes-sociais{
     display: flex;
-    justify-content: center;
     gap: 30px;
     margin-top: 20px;
 }
@@ -117,8 +116,4 @@ footer{
 .redes-sociais img{
     width: 180px;
     height: 180px;
-    transition: 0.3s;
-}
-.redes-sociais img:hover{
-    transform: scale(1.05);
 }
