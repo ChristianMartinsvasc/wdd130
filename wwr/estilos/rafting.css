@@ -207,18 +207,13 @@ footer{
     width: 40px;
     height: 40px;
 }
-.contact-info,
-.employees,
-.contact-form {
+.contact-info, .employees, .contact-form {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
 }
 
-.contact-info h1,
-.contact-info h2,
-.employees h2,
-.contact-form h2 {
+.contact-info h1, .contact-info h2, .employees h2, .contact-form h2 {
     text-align: center;
     margin-bottom: 1rem;
 }
@@ -228,14 +223,12 @@ footer{
     margin-bottom: 2rem;
     line-height: 1.8;
 }
-
-.map iframe {
+.map iframe, .contact-info iframe {
     width: 100%;
-    height: 450px;
-    border: 2px solid #ddd;
-    border-radius: 8px;
+    height: 500px;
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 10px;
 }
-
 .employee-gallery {
     display: flex;
     justify-content: center;
@@ -265,9 +258,7 @@ footer{
     gap: 1rem;
 }
 
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
+.contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea {
     padding: 0.8rem;
     border: 1px solid #ccc;
     border-radius: 5px;
