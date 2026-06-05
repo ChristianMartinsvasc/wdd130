@@ -90,6 +90,7 @@
 
             <h2>Envie sua Mensagem</h2>
 
+
             <form action="#" method="post">
 
                 <label for="name">Nome</label>
@@ -102,33 +103,24 @@
 
                     <legend>Finalidade da Mensagem</legend>
 
-                    <label>
-                        <input type="radio" name="purpose" value="consulta-geral" required>
-                        Consulta Geral
-                    </label>
+                    <input type="radio" id="consulta" name="purpose" value="consulta-geral" required>
+                    <label for="consulta">Consulta Geral</label>
 
-                    <label>
-                        <input type="radio" name="purpose" value="reserva">
-                        Pergunta sobre Reserva
-                    </label>
+                    <input type="radio" id="reserva" name="purpose" value="reserva">
+                    <label for="reserva">Pergunta sobre Reserva</label>
 
-                    <label>
-                        <input type="radio" name="purpose" value="sugestao">
-                        Sugestão de Site
-                    </label>
+                    <input type="radio" id="sugestao" name="purpose" value="sugestao">
+                    <label for="sugestao">Sugestão de Site</label>
 
                 </fieldset>
 
                 <label for="message">Mensagem</label>
-
                 <textarea id="message" name="message" rows="6" required></textarea>
 
-                <label class="newsletter">
-                    <input type="checkbox" name="newsletter">
-                    Quero receber a newsletter mensal
-                </label>
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Quero receber a newsletter mensal</label>
 
-                <button type="submit">Enviar Mensagem</button>
+                <button type="submit">Enviar Mensagem para a Equipe</button>
 
             </form>
 
