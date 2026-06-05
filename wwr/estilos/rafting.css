@@ -3,14 +3,11 @@
     --cor-secundaria: #83c5be;
     --cor-destaque1: #1d3557;
     --cor-destaque2: #8b4513;
-
     --cor-branca: #ffffff;
     --cor-fundo: #f5f5f5;
     --cor-sombra: gray;
-
     --cor-overlay-escuro: rgba(29, 53, 87, 0.8);
     --cor-overlay-claro: rgba(255,255,255,0.85);
-
     --fonte-titulo: "Georgia", serif;
     --fonte-body: Arial, Helvetica, sans-serif;
 }
@@ -47,10 +44,8 @@ header{
     display: grid;
     grid-template-columns: 200px 1fr;
     align-items: center;
-
     background-color: var(--cor-secundaria);
     color: var(--cor-destaque1);
-
     padding: 10px;
 }
 
@@ -88,41 +83,29 @@ nav a:hover{
 .hero h1{
     position: absolute;
     top: 10px;
-
     width: 100%;
-
     padding: 16px;
-
     background-color: var(--cor-overlay-escuro);
     color: var(--cor-branca);
-
     font-size: 42px;
     letter-spacing: 2px;
 }
 
 .hero article{
     position: absolute;
-
     bottom: 0;
     left: 30px;
     right: 30px;
-
     background-color: var(--cor-overlay-claro);
-
     padding: 10px;
-
     border-radius: 10px;
 }
 
 .hero article img{
     float: right;
-
     width: 125px;
-
     margin-left: 15px;
-
     border: 3px solid var(--cor-branca);
-
     box-shadow: 0 0 10px var(--cor-sombra);
 }
 
@@ -167,9 +150,7 @@ section p{
 .gallery img{
     width: 100%;
     height: 100px;
-
     object-fit: cover;
-
     border-radius: 10px;
 }
 
@@ -177,18 +158,120 @@ section p{
     margin-top: 8px;
     font-size: 14px;
     font-weight: bold;
-
     color: var(--cor-destaque2);
+}
+
+.contact-info, .employees, .contact-form{
+    background-color: var(--cor-branca);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 16px;
+}
+
+.contact-info h1, .contact-info h2, .employees h2, .contact-form h2{
+    margin-bottom: 20px;
+}
+
+.company-info{
+    text-align: center;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.map iframe, .contact-info iframe{
+    width: 100%;
+    height: 600px;
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 10px;
+}
+
+.employee-gallery{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.employee-gallery figure{
+    width: 220px;
+    text-align: center;
+}
+
+.employee-gallery img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--cor-sombra);
+}
+
+.employee-gallery figcaption{
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--cor-destaque2);
+}
+
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label{
+    font-weight: bold;
+}
+
+.contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 5px;
+    font-family: var(--fonte-body);
+}
+
+fieldset{
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 5px;
+    padding: 15px;
+}
+
+fieldset legend{
+    font-weight: bold;
+    color: var(--cor-primaria);
+}
+
+fieldset label{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.newsletter{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-form button{
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact-form button:hover{
+    background-color: var(--cor-destaque1);
 }
 
 footer{
     margin-top: 20px;
-
     padding: 20px;
-
     background-color: var(--cor-destaque1);
     color: var(--cor-branca);
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -206,94 +289,4 @@ footer{
 .redes-sociais img{
     width: 40px;
     height: 40px;
-}
-.contact-info, .employees, .contact-form {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-}
-
-.contact-info h1, .contact-info h2, .employees h2, .contact-form h2 {
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.company-info {
-    text-align: center;
-    margin-bottom: 2rem;
-    line-height: 1.8;
-}
-.map iframe, .contact-info iframe {
-    width: 100%;
-    height: 500px;
-    border: 2px solid var(--cor-secundaria);
-    border-radius: 10px;
-}
-.employee-gallery {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
-
-.employee-gallery figure {
-    max-width: 300px;
-    text-align: center;
-}
-
-.employee-gallery img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.employee-gallery figcaption {
-    margin-top: .5rem;
-    font-weight: bold;
-}
-
-.contact-form form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea {
-    padding: 0.8rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-family: inherit;
-}
-
-fieldset {
-    padding: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-fieldset label {
-    display: block;
-    margin-bottom: .5rem;
-}
-
-.newsletter {
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-}
-
-.contact-form button {
-    background-color: #005f99;
-    color: white;
-    border: none;
-    padding: 1rem;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.contact-form button:hover {
-    background-color: #00406b;
 }
